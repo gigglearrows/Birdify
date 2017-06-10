@@ -13,8 +13,6 @@ import android.widget.TextView;
 
 public class MainActivity extends BaseActivity {
     private static final String TAG = "HomeActivity";
-    private SnappingHorizontalScrollView scrollView;
-
     private final Bird popular_birds[] = new Bird[]
             {
                     new Bird("Ovenbird", R.drawable.ovenbird),
@@ -22,6 +20,7 @@ public class MainActivity extends BaseActivity {
                     new Bird("Woodpecker", R.drawable.woodpecker),
                     new Bird("Owl", R.drawable.owl),
             };
+    private SnappingHorizontalScrollView scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,6 @@ public class MainActivity extends BaseActivity {
 
         scrollView = (SnappingHorizontalScrollView) findViewById(R.id.popularbirdscroll);
         scrollView.setOnScreenSwitchListener(onScreenSwitchListener());
-        //scrollView.setOnClickListener(onScreenClickListener());
         inflateLayoutsToHorizontalView(scrollView);
     }
 
@@ -50,27 +48,6 @@ public class MainActivity extends BaseActivity {
             }
         };
     }
-    /**
-     * on horizontal scrollview page clicked
-     *
-    private SnappingHorizontalScrollView.OnClickListener onScreenClickListener() {
-        return new SnappingHorizontalScrollView.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String birdname = ((TextView) v.findViewById(R.id.popularbirdname)).getText().toString();
-                Intent nowplaying = new Intent(MainActivity.this, PlayingActivity.class);
-
-                for (Bird bird : popular_birds) {
-                    if (birdname.equals(bird.name)) {
-                        nowplaying.putExtra("birdname", bird.name);
-                        nowplaying.putExtra("birdimage", bird.image);
-                    }
-                }
-
-                startActivity(nowplaying);
-            }
-        };
-    }*/
 
     @SuppressLint("InflateParams")
     public void inflateLayoutsToHorizontalView(ViewGroup layout) {

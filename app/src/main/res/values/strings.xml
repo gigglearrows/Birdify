@@ -5,11 +5,11 @@
     <string name="title_birds">Birds</string>
 
     <string name="birdname">Bird name</string>
-    <string name="playingactivity_infotext">This is the now playing activity. By clicking the different birds in the birds list, the now playing activity opens up and starts playing that bird\'s song.</string>
+    <string name="playingactivity_infotext">This is the now playing activity. This activity opens up and starts playing that bird\'s song. You can see the picture and name of the bird. This activity will use the MediaPlayer class below to control the song</string>
     <string name="birdimage_infotext">Picture of the bird</string>
-    <string name="birdactivity_infotext">On this screen, there is a list of all the birds with a picture. You can click on these to go to the \'now playing\' screen using an explicit intent</string>
+    <string name="birdactivity_infotext">On this screen, there is a list of all the birds with a picture. You can click on these to go to the \'now playing\' screen using an explicit intent. This Activity uses a self made Class called Bird to store information about the birds. It also uses a custom ArrayListAdapter so that to get the specific format with image and birdname in the ListView. The activity will use the Digibird API (http://www.digibird.org/api/) to request birdnames, images and sounds and list the birds.</string>
     <string name="homeactivity_infotext">Welcome to Birdify. This is an app where you can listen to your favorite bird songs/sounds and search for new ones. On the home page it is also possible to see the most popular bird songs.</string>
-    <string name="searchactivity_infotext">In the search menu you can be able to search for different birds you want to hear</string>
+    <string name="searchactivity_infotext">In the search menu you can be able to search for different birds you want to hear. Here can also the SearchView view be used instead. The search activity will search an external database connected to the Digibird API</string>
     <string name="search_hint">Search for birds</string>
     <string name="popularbird_header">Most popular birds</string>
 
