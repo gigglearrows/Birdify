@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/mediumMargin" >
+
+    <ImageView
+        android:id="@+id/popularbirdimg"
+        android:layout_width="192dp"
+        android:layout_height="172dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ovenbird" />
+
+    <TextView
+        android:id="@+id/popularbirdname"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/popularbirdimg"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:padding="@dimen/viewHeight"
+        android:textStyle="bold" />
+
+</RelativeLayout>

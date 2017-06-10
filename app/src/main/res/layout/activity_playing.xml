@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/marginQ"
+    android:paddingLeft="@dimen/marginQ"
+    android:paddingRight="@dimen/marginQ"
+    android:paddingTop="@dimen/mediumMargin"
+    tools:context="com.appandgo.birdify.PlayingActivity">
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:paddingBottom="@dimen/marginQ"
+        android:paddingLeft="@dimen/marginHuge"
+        android:paddingRight="@dimen/marginHuge"
+        android:paddingTop="@dimen/marginQ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginStart="@dimen/mediumMargin"
+        android:padding="@dimen/marginQ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/playBtn"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <ImageButton
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:padding="@dimen/marginQ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/playBtn"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageView
+        android:id="@+id/birdPlayingImage"
+        android:layout_width="0dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="@dimen/marginQ"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityInfoText"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/birdInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mediumMargin"
+        android:text="@string/birdimage_infotext"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/birdPlayingImage"
+        app:layout_constraintLeft_toLeftOf="@+id/birdPlayingImage"
+        app:layout_constraintRight_toRightOf="@+id/birdPlayingImage"
+        app:layout_constraintTop_toTopOf="@+id/birdPlayingImage" />
+
+    <TextView
+        android:id="@+id/birdPlayingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginQ"
+        android:text="@string/birdname"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birdPlayingImage" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birdPlayingName" />
+
+    <TextView
+        android:id="@+id/activityInfoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="start"
+        android:padding="@dimen/mediumMargin"
+        android:text="@string/playingactivity_infotext"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playingCurrentTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mediumMargin"
+        android:layout_marginEnd="@dimen/mediumMargin"
+        android:layout_marginRight="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:text="0:00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintRight_toLeftOf="@+id/timerDivider"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/playingTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mediumMargin"
+        android:layout_marginLeft="@dimen/mediumMargin"
+        android:layout_marginStart="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:text="1:41"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintLeft_toRightOf="@+id/timerDivider"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <View
+        android:id="@+id/timerDivider"
+        android:layout_width="@dimen/viewHeight"
+        android:layout_height="@dimen/marginQ"
+        android:layout_marginBottom="@dimen/mediumMargin"
+        android:layout_marginTop="@dimen/mediumMargin"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+</android.support.constraint.ConstraintLayout>

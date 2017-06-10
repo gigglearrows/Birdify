@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appandgo.birdify.BirdActivity">
+
+    <LinearLayout
+        android:id="@+id/dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/mediumMargin"
+        android:paddingLeft="@dimen/mediumMargin"
+        android:paddingRight="@dimen/mediumMargin"
+        android:paddingStart="@dimen/mediumMargin"
+        android:paddingTop="@dimen/mediumMargin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/mediumMargin"
+            android:text="@string/homeactivity_infotext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginQ"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/popularbird_header"/>
+
+        <com.appandgo.birdify.SnappingHorizontalScrollView
+            android:id="@+id/popularbirdscroll"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/mediumMargin"
+            android:layout_height="192dp" >
+
+        </com.appandgo.birdify.SnappingHorizontalScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

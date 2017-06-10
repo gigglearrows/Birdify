@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="birds">
+        <item>Willow Warbler</item>
+        <item>Wood Warbler</item>
+        <item>Chiffchaff</item>
+        <item>Ovenbird</item>
+        <item>Sparrow</item>
+        <item>Wren</item>
+        <item>Woodpecker</item>
+        <item>Owl</item>
+        <item>Crow</item>
+    </string-array>
+    <string-array name="bird_icon_ids">
+        <item>R.drawable.willowwarbler</item>
+        <item>R.drawable.woodwarbler</item>
+        <item>R.drawable.chiffchaff</item>
+        <item>R.drawable.ovenbird</item>
+        <item>R.drawable.sparrow</item>
+        <item>R.drawable.wren</item>
+        <item>R.drawable.woodpecker</item>
+        <item>R.drawable.owl</item>
+        <item>R.drawable.crow</item>
+    </string-array>
+</resources>

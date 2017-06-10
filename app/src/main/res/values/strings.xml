@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Birdify</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_birds">Birds</string>
+
+    <string name="birdname">Bird name</string>
+    <string name="playingactivity_infotext">This is the now playing activity. By clicking the different birds in the birds list, the now playing activity opens up and starts playing that bird\'s song.</string>
+    <string name="birdimage_infotext">Picture of the bird</string>
+    <string name="birdactivity_infotext">On this screen, there is a list of all the birds with a picture. You can click on these to go to the \'now playing\' screen using an explicit intent</string>
+    <string name="homeactivity_infotext">Welcome to Birdify. This is an app where you can listen to your favorite bird songs/sounds and search for new ones. On the home page it is also possible to see the most popular bird songs.</string>
+    <string name="searchactivity_infotext">In the search menu you can be able to search for different birds you want to hear</string>
+    <string name="search_hint">Search for birds</string>
+    <string name="popularbird_header">Most popular birds</string>
+
+</resources>
